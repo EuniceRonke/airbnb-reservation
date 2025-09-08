@@ -3,6 +3,11 @@ CREATE DATABASE airbnb;
 -- work with airbnb database
 USE airbnb;
 
+CREATE TABLE guest_type (
+    id INT PRIMARY KEY AUTO_INCREMENT,  -- Unique identifier for each guest type
+    type_name VARCHAR(255) NOT NULL     -- Name of the guest type
+);
+
 CREATE TABLE category (
     id INT AUTO_INCREMENT PRIMARY KEY, 
     category_name VARCHAR(255) NOT NULL 
